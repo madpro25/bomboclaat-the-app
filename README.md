@@ -16,9 +16,9 @@ python -m venv venv
 source ./venv/bin/activate
 
 # Install the requirements
-pip install -U ./requirements.txt
+pip install -r ./requirements.txt
 
 # For a dev setup, install dev requirements and setup pre-commit hooks
-pip install -U ./requirements-dev.txt
+pip install -r ./requirements-dev.txt
 pre-commit install
 ```
