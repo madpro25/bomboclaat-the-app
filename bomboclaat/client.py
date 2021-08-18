@@ -1,9 +1,12 @@
+import logging
 import discord
+
+logger = logging.getLogger(__name__)
 
 
 class BomboClient(discord.Client):
     async def on_ready(self):
-        print(f"We have logged in as {self.user}")
+        logger.warning(f"We have logged in as {self.user}")
 
     async def on_message(self, message):
         if message.author == self.user:
